@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{  //to write a program to check palindrome no
+int n,s=0,r;
+scanf("%d", &n);
+int temp=n;
+while(n>0)
+{
+r=n%10;
+s=s*10+r;
+n=n/10;
+}
+if(temp==s)
+printf("PALINDROME");
+else
+printf("NOT PALINDROME");
+return 0;
+}
